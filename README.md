@@ -72,7 +72,7 @@ http://localhost:5173
 
 ---
 
-## Industry Patterns Used
+<!-- ## Industry Patterns Used
 
 | Pattern | Location |
 |---|---|
@@ -85,4 +85,4 @@ http://localhost:5173
 | Responsive grid | CSS Grid with `@media` breakpoints |
 | Design Tokens | `src/styles/global.css` CSS variables |
 
----
+--- -->
