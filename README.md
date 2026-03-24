@@ -2,6 +2,9 @@
 
 > A React + Vite application that fetches real-time motivational quotes and live weather data from free public APIs.
 
+# OUTPUT
+<img width="1916" height="911" alt="image" src="https://github.com/user-attachments/assets/e5dcff4c-3a58-448b-b7d0-eee389792654" />
+
 ---
 
 ## Project Structure
