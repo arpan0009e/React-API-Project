@@ -1,0 +1,94 @@
+/* ============================================================
+   GLOBAL STYLES & DESIGN TOKENS
+   Smart Dashboard — Practical 7 (Industry-Grade Rebuild)
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Palette — warm dark editorial */
+  --clr-bg:          #0d0d0f;
+  --clr-surface:     #141417;
+  --clr-surface-2:   #1c1c21;
+  --clr-border:      rgba(255,255,255,0.07);
+  --clr-border-hover:rgba(255,255,255,0.14);
+
+  --clr-accent:      #e8c97e;   /* warm gold */
+  --clr-accent-mute: rgba(232,201,126,0.12);
+  --clr-accent-glow: rgba(232,201,126,0.25);
+
+  --clr-sky:         #7eb8e8;   /* steel-blue for weather */
+  --clr-sky-mute:    rgba(126,184,232,0.12);
+
+  --clr-text-primary: #f0ede8;
+  --clr-text-secondary: #8a8890;
+  --clr-text-muted:   #52505a;
+
+  /* Typography */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Spacing scale */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  24px;
+  --sp-xl:  40px;
+  --sp-2xl: 64px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 300ms;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--clr-bg);
+  color: var(--clr-text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  /* Subtle grain texture overlay */
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(232,201,126,0.04) 0%, transparent 70%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--clr-bg); }
+::-webkit-scrollbar-thumb { background: var(--clr-surface-2); border-radius: 3px; }
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Selection */
+::selection {
+  background: var(--clr-accent-mute);
+  color: var(--clr-accent);
+}
