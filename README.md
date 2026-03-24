@@ -83,12 +83,3 @@ http://localhost:5173
 | Design Tokens | `src/styles/global.css` CSS variables |
 
 ---
-
-## Viva Voce Answers
-
-1. **What is an API?** — Application Programming Interface; a contract for how software components communicate. Here we call REST HTTP endpoints.
-2. **Asynchronous fetching in React?** — Using `async/await` inside event handlers or `useEffect`, keeping the UI non-blocking while data loads.
-3. **useState hook?** — Declares reactive state inside a function component; triggers re-render when state changes.
-4. **How does fetch() work?** — Returns a Promise; `.json()` parses the response body; wrapped in `try/catch` for error handling.
-5. **Why external APIs?** — Avoid rebuilding existing services; get real-time data; modular, scalable architecture.
-6. **What happens on state update?** — React schedules a re-render of the component and its children; DOM is efficiently patched via the virtual DOM diffing algorithm.
