@@ -1,4 +1,4 @@
-# SmartDash — Practical 7 (Industry-Grade Rebuild)
+# SmartDash 
 
 > A React + Vite application that fetches real-time motivational quotes and live weather data from free public APIs.
 
